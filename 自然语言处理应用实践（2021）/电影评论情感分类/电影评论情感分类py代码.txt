@@ -1,0 +1,106 @@
+第一步：下载数据并解压
+
+!wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+!tar -zxvf aclImdb_v1.tar.gz
+
+第二步：预处理，训练，测试
+
+import numpy as np
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Dense
+from tensorflow.keras.preprocessing.text import Tokenizer
+import numpy as np
+import os
+import re
+re_tag = re.compile(r'<[^>]+>')
+
+def rm_tags(text):
+    return re_tag.sub('', text)
+
+def read_files(filetype):
+    path = "aclImdb/"
+    file_list = []
+
+    positive_path = path + filetype + "/pos/"
+    for f in os.listdir(positive_path):
+        file_list += [positive_path + f]
+
+    negative_path = path + filetype + "/neg/"
+    for f in os.listdir(negative_path):
+        file_list += [negative_path + f]
+
+    print('read', filetype, 'files:', len(file_list))
+
+    all_labels = ([1] * 12500 + [0] * 12500)
+
+    all_texts = []
+
+    for fi in file_list:
+        with open(fi, encoding='utf8') as file_input:
+            all_texts += [rm_tags(" ".join(file_input.readlines()))]
+
+    return all_labels, all_texts
+
+# 读取数据集
+train_label, train_text = read_files('train')
+test_label, test_text = read_files('test')
+print('转换前文本:', train_text[0])
+
+# 转换成TF-IDF特征表示
+token = Tokenizer(num_words=1000)
+token.fit_on_texts(train_text)
+
+x_train = token.texts_to_matrix(train_text, mode='tfidf')
+x_test  = token.texts_to_matrix(test_text, mode='tfidf')
+print('转换成TFIDF后文本:', x_train[0])
+
+y_train = np.array(train_label)
+y_test = np.array(test_label)
+
+#构建模型
+inputs = Input(shape=(1000,))
+x = Dense(100, activation='relu')(inputs)
+x = Dense(100, activation='relu')(x)
+outputs = Dense(1, activation='sigmoid')(x)
+model = Model(inputs=inputs, outputs=outputs)
+model.summary()
+
+model.compile(loss='binary_crossentropy',
+              #optimizer='rmsprop',
+              optimizer='adam',
+              metrics=['acc'])
+
+train_history = model.fit(x_train, y_train, batch_size=100,
+                         epochs=10, verbose=1,
+                         validation_split=0.2)
+
+
+import matplotlib.pyplot as plt
+def show_train_history(train_history, train, validation):
+    plt.plot(train_history.history[train])
+    plt.plot(train_history.history[validation])
+    plt.title('Train History')
+    plt.ylabel(train)
+    plt.xlabel('Epoch')
+    plt.legend(['train', 'validation'], loc='upper left')
+    plt.show()
+
+show_train_history(train_history,'acc','val_acc')
+show_train_history(train_history,'loss','val_loss')
+
+
+loss, accuracy = model.evaluate(x_test, y_test, verbose=1)
+print('测试集损失函数值:', loss)
+print('测试集合准确率', accuracy)
+
+
+probility = model.predict(x_test)
+print(probility[:10])
+probility[probility>0.5] = 1
+
+SentimentDict={1:'正面的',0:'负面的'}
+def display_test_Sentiment(i):
+    print(test_text[i])
+    print('标签label:',SentimentDict[y_test[i]],'预测结果:',SentimentDict[probility[i][0]])
+
+display_test_Sentiment(2)
