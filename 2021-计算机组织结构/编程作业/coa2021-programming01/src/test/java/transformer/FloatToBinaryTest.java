@@ -68,16 +68,4 @@ public class FloatToBinaryTest {
         assertEquals("01001001110100010000000000000000", result);
     }
 
-    @Test
-    public void test12() {
-        String result = t.floatToBinary(String.valueOf(61.419997));
-        System.out.println(result);
-
-        String result1 = t.floatToBinary(String.valueOf(61.419998));
-        System.out.println(result1);
-
-        String result2 = t.floatToBinary(String.valueOf(61.419999));
-        System.out.println(result2);
-    }
-
 }

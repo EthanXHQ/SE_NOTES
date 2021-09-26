@@ -74,9 +74,4 @@ public class BinaryToFloatTest {
 		assertEquals(String.valueOf(0.0), result);
 	}
 
-	@Test
-	public void test13() {
-		String result = t.binaryToFloat("01000010011101011010111000010110");
-		System.out.println(result);
-	}
 }
