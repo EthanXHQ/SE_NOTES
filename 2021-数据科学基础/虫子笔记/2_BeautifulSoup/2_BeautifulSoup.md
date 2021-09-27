@@ -148,3 +148,88 @@ for item in items:
 
 ##### 2.2.2 `Tag`对象
 
+还以上面的代码为例，我们现在拿到的是一个个包含html标签的数据，还没达成目标。
+
+这个时候，我们一般会选择用`type()`函数查看一下数据类型，因为Python是一门面向对象编程的语言，只有知道是什么对象，才能调用相关的对象属性和方法。
+
+```python
+import requests 
+from bs4 import BeautifulSoup 
+res = requests.get('https://localprod.pandateacher.com/python-manuscript/crawler-html/spider-men5.0.html')
+html= res.text
+soup = BeautifulSoup( html,'html.parser') 
+# 通过定位标签和属性提取我们想要的数据
+items = soup.find_all(class_='books') 
+for item in items:
+    # 打印item元素，若直接打印items为列表
+    print('想找的数据都包含在这里了：\n',item) 
+    print(type(item))
+```
+
+我们看到它们的数据类型是`<class 'bs4.element.Tag'>`，是`Tag`对象，这与`find()`提取出的数据类型是一样的。
+
+###### `Tag`类对象的常用属性和方法
+
+![img](https://res.pandateacher.com/crawler-l2-16-201919.png)
+
+1.`Tag`对象可以使用`find()`与`find_all()`来继续检索。
+
+```python
+# 调用requests库
+import requests 
+# 调用BeautifulSoup库
+from bs4 import BeautifulSoup 
+# 返回一个response对象，赋值给res
+res = requests.get('https://localprod.pandateacher.com/python-manuscript/crawler-html/spider-men5.0.html')
+# 把res的内容以字符串的形式返回
+html = res.text
+# 把网页解析为BeautifulSoup对象
+soup = BeautifulSoup( html,'html.parser') 
+# 通过定位标签和属性提取我们想要的数据
+items = soup.find_all(class_='books') 
+for item in items:
+    # 在列表中的每个元素里，匹配标签<h2>提取出数据
+    kind = item.find('h2') 
+    # 在列表中的每个元素里，匹配属性class_='title'提取出数据
+    title = item.find(class_='title')
+    # 在列表中的每个元素里，匹配属性class_='info'提取出数据 
+    brief = item.find(class_='info') 
+    # 打印提取出的数据
+    print(kind,'\n',title,'\n',brief) 
+    # 打印提取出的数据类型
+    print(type(kind),type(title),type(brief))
+```
+
+除了我们拿到的数据之外；运行结果的数据类型，又是三个`<class 'bs4.element.Tag'>`，用`find()`提取出来的数据类型和刚才一样，还是`Tag`对象。接下来要做的，就是把`Tag`对象中的文本内容提出来。
+
+2.这时，可以用到`Tag`对象的另外两种属性——`Tag.text`（获得标签中的值），和`Tag['属性名']`（获得属性值）。
+
+我们用`Tag.text`提出`Tag`对象中的文字，用`Tag['href']`提取出URL。
+
+只需要修改最后一行代码，我们想要的数据就都能成功提取出来了：
+
+```python
+# 调用requests库
+import requests 
+# 调用BeautifulSoup库
+from bs4 import BeautifulSoup 
+# 返回一个response对象，赋值给res
+res =requests.get('https://localprod.pandateacher.com/python-manuscript/crawler-html/spider-men5.0.html')
+# 把res解析为字符串
+html=res.text
+# 把网页解析为BeautifulSoup对象
+soup = BeautifulSoup( html,'html.parser')
+# 通过匹配属性class='books'提取出我们想要的元素
+items = soup.find_all(class_='books')  
+# 遍历列表items
+for item in items:       
+    # 在列表中的每个元素里，匹配标签<h2>提取出数据               
+    kind = item.find('h2')     
+    #  在列表中的每个元素里，匹配属性class_='title'提取出数据          
+    title = item.find(class_='title')  
+    # 在列表中的每个元素里，匹配属性class_='info'提取出数据   
+    brief = item.find(class_='info')      
+    # 打印书籍的类型、名字、链接和简介的文字
+    print(kind.text,'\n',title.text,'\n',title['href'],'\n',brief.text)
+```
+
