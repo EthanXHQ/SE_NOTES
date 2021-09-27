@@ -233,3 +233,9 @@ for item in items:
     print(kind.text,'\n',title.text,'\n',title['href'],'\n',brief.text)
 ```
 
+#### 2.3 对象的变化过程
+
+从最开始用`requests`库获取数据，到用`BeautifulSoup`库来解析数据，再继续用`BeautifulSoup`库提取数据，不断经历的是我们操作对象的类型转换。
+
+![img](https://res.pandateacher.com/2019-10-21-15-57-19.png)
+
