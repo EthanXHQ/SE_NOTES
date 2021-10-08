@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc66ed78-b645-488a-8132-b7a8d5bb357b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-3union/3-3union.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-3union/src/union.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/3-4reverseLinkedList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/out/production/3-4reverseLinkedList/reverse$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/out/production/3-4reverseLinkedList/reverse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/src/reverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3-1-1swapSingleLinkedList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-1-1swapSingleLinkedList/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3-3union/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-3union/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

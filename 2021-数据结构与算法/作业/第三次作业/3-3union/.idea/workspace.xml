@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284705cd-caf1-42f7-aaf2-0cf6eed1b78a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-3union.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/union.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/3-4reverseLinkedList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/out/production/3-4reverseLinkedList/reverse$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/out/production/3-4reverseLinkedList/reverse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-4reverseLinkedList/src/reverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3-1-1swapSingleLinkedList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-1-1swapSingleLinkedList/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
