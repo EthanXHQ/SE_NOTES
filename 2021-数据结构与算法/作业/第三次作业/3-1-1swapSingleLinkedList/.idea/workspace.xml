@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52657ee7-34a8-4974-ad93-25f67b00f933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../3-2intersection/out/production/3-2intersection/intersection$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-2intersection/out/production/3-2intersection/intersection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-3union/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-3union/3-3union.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-3union/src/union.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-2intersection/src/intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3-2intersection/src/intersection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
