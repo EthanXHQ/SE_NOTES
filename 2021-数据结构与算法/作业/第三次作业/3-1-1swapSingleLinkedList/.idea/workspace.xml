@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52657ee7-34a8-4974-ad93-25f67b00f933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-1-1swapSingleLinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/3-1-1swapSingleLinkedList/swap$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/3-1-1swapSingleLinkedList/swap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/swap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/3-1-2swapDoublyLinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/out/production/3-1-2swapDoublyLinkedList/swap$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/out/production/3-1-2swapDoublyLinkedList/swap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-1-2swapDoublyLinkedList/src/swap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-2intersection/out/production/3-2intersection/intersection$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-2intersection/out/production/3-2intersection/intersection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-2intersection/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3-2intersection/src/intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3-2intersection/src/intersection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +24,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="ProjectId" id="1zDSQhrXMBzBy5PeBvz0Hv8iufH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../第一次作业/1-2PrintAllPermutations" />
@@ -85,5 +76,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
