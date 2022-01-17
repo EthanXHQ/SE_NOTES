@@ -10,6 +10,7 @@ def cuttest(test_sent):
 
 
 if __name__ == "__main__":
+    cuttest("陈骏是徐浩钦的儿子")
     cuttest("这是一个伸手不见五指的黑夜。我叫孙悟空，我爱北京，我爱Python和C++。")
     cuttest("我不喜欢日本和服。")
     cuttest("雷猴回归人间。")
